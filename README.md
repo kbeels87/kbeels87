@@ -34,7 +34,7 @@ This is a beginners guide that outlines a step by step process of how to deploy 
 <p>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In order to create a virtual machine you must first login to the azure portal and create a new resource group. After this you will need to create a domain controller. Be sure that your DC is in the same region and to use the appropriate size and image or this could cause problems later on. After this make sure to put your DC in the right virtual network. After you create your DC you can begin you client VM. You will follow the same steps as before making sure you select the appropriate size, region, and image. Once the virtual machinces are created you will need to set the virtual NIC IP address from private to static. After the VM is created you will need to set the clients DNS settings to the DC private IP address, this will allow us to join the domain. 
 </p>
 <br />
 
