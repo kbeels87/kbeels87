@@ -42,7 +42,7 @@ In order to create a virtual machine you must first login to the azure portal an
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next will want to begin to install Active Directory Domain Services. In order to do this we will need to use remote desktop to login to our Domain controller using the public IP address. Once Active Directory is installed we want to configure it to become an actual domain controller in whats called a new forest.
+Next you will want to begin to install Active Directory Domain Services. In order to do this we will need to use remote desktop to login to our Domain controller using the public IP address. Once Active Directory is installed you will be able to configure it to become an actual domain controller in whats called a new forest. Once AD is installed and you have created a new forest you will need to create a domain Admin user within the domain. This will allow the Admin to create new users reset passwords etc. Once this is completed you will want to join the client user to the domain. 
 </p>
 <br />
 
