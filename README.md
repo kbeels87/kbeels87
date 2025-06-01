@@ -22,7 +22,7 @@ This is a beginners guide that outlines a step by step process of how to deploy 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Creating a Virtual Machine
-- Step 2
+- Installing Active Directory Domain Services
 - Step 3
 - Step 4
 
