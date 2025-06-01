@@ -50,6 +50,6 @@ Next you will want to begin to install Active Directory Domain Services. In orde
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next we will begin working on allowing domain users to have access to remote desktop. You can do this by logging into remote desktop with your Admin credentials. When this is finished you should be able to login through your client VM as a non administrative user. After this we will begin to use powershell to create users inside of Active Directory. When you run the script in powershell you should see the user accounts being created. Once the user accounts are finished being created, you can try to login to the Client VM with a random account you have just created.
 </p>
 <br />
