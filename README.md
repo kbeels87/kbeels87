@@ -53,3 +53,9 @@ Next you will want to begin to install Active Directory Domain Services. In orde
 Next we will begin working on allowing domain users to have access to remote desktop. You can do this by logging into remote desktop with your Admin credentials. When this is finished you should be able to login through your client VM as a non administrative user. After this we will begin to use powershell to create users inside of Active Directory. When you run the script in powershell you should see the user accounts being created. Once the user accounts are finished being created, you can try to login to the Client VM with a random account you have just created.
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Next a common issue that you will be dealing with on the help desk will be unlocking user accounts. We can practice doing this by logging into out domain controller and picking a random user account. Once you do that, log in multiple times with the wrong password using the client VM until you get locked out of the account. Go back to the domain controller and observe that the user is locked out. Unlock the account and attempt to log in with the user and the account should be unlocked. There are many other things you can do with Group Policy such as resetting passwords and disabling user accounts. 
