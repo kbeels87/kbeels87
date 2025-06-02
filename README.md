@@ -23,8 +23,8 @@ This is a beginners guide that outlines a step by step process of how to deploy 
 
 - Creating a Virtual Machine
 - Installing Active Directory Domain Services
-- Step 3
-- Step 4
+- Using Remote Desktop / Powershell
+- Configuring Group Policy
 
 <h2>Deployment and Configuration Steps</h2>
 
