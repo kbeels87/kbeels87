@@ -39,16 +39,20 @@ In order to create a virtual machine you must first login to the azure portal an
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![AD-11](https://github.com/user-attachments/assets/20852714-0de9-4760-9582-e277c54c104a)
+
+
 </p>
 <p>
 Next you will want to begin to install Active Directory Domain Services. In order to do this we will need to use remote desktop to login to our Domain controller using the public IP address. Once Active Directory is installed you will be able to configure it to become an actual domain controller in what is called a new forest. Once AD is installed and you have created a new forest you will need to create a domain Admin user within the domain. This will allow the Admin to create new users and be able to reset passwords etc. Once this is completed you will want to join the client user to the domain. 
 </p>
 <br />
 
+![AD-12](https://github.com/user-attachments/assets/896e9258-ce8e-45b2-a206-76a8f911d4de)
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 </p>
 <p>
 Next we will begin working on allowing domain users to have access to remote desktop. You can do this by logging into remote desktop with your Admin credentials. When this is finished you should be able to login through your client VM as a non administrative user. After this we will begin to use powershell to create users inside of Active Directory. When you run the script in powershell you should see the user accounts being created. Once the user accounts are finished being created, you can try to login to the Client VM with a random account you have just created.
