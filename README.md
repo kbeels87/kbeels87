@@ -28,7 +28,8 @@ This is a beginners guide that outlines a step by step process of how to deploy 
 
 <h2>Deployment and Configuration Steps</h2>
 
-![image](https://github.com/user-attachments/assets/c8a17e87-187e-4f1c-b5df-51e6b374e9ab)
+![AD-3](https://github.com/user-attachments/assets/a0d9fd90-d678-4180-8f29-79366b0cc2d2)
+
 
 
 <p>
@@ -55,7 +56,7 @@ Next we will begin working on allowing domain users to have access to remote des
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+https://imgur.com/a/uauNgjn
 </p>
 <p>
 Next a common issue that you will be dealing with on the help desk will be unlocking user accounts. We can practice doing this by logging into out domain controller and picking a random user account. Once you do that, log in multiple times with the wrong password using the client VM until you get locked out of the account. Go back to the domain controller and observe that the user is locked out. Unlock the account and attempt to log in with the user and the account should be unlocked. There are many other things you can do with Group Policy such as resetting passwords and disabling user accounts. 
