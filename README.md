@@ -2,8 +2,8 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>Configuring Active Directory in the Cloud (Azure)</h1>
-This is a beginners guide that outlines a step by step process of how to deploy Active Directory within Azure Virtual Machines.<br />
+<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
+This tutorial outlines the implementation of on-premises Active-Directory Virtual Machines.<br />
 
 
 
@@ -19,12 +19,6 @@ This is a beginners guide that outlines a step by step process of how to deploy 
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>High-Level Deployment and Configuration Steps</h2>
-
-- Creating a Virtual Machine
-- Installing Active Directory Domain Services
-- Using Remote Desktop / Powershell
-- Configuring Group Policy
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -35,7 +29,7 @@ This is a beginners guide that outlines a step by step process of how to deploy 
 <p>
 </p>
 <p>
-In order to create a virtual machine you must first login to the azure portal and create a new resource group. After this you will need to create a domain controller making sure that your DC is in the same region and to use the appropriate size and image (Winddows Server 2022) or this could cause problems later on. Also you will be required to create a username and password for both your domain controller and your client VM when you log in to remote desktop. After this make sure to put your DC in the right virtual network. After you create your DC you can begin your client VM. You will follow the same steps as before making sure you select the appropriate size, region, and image (Windows 10 Pro). Once the virtual machines are created you will need to set the virtual NIC IP address from private to static. After the VM is created you will need to set the clients DNS settings to the DC private IP address, this will allow us to join the domain. 
+In this lab we will create two VMs in the same VNET. One will be a domain controller, the other will be a Client machine. We will change the DC to a static IP because its offerina Active Directory services to the client machine. Client machine will be joined to the domain. We will control the DNS settings on the client machine, the client machine will use the DC as its DNS server.
 </p>
 <br />
 
@@ -43,8 +37,7 @@ In order to create a virtual machine you must first login to the azure portal an
 
 
 </p>
-<p>
-Next you will want to begin to install Active Directory Domain Services. In order to do this we will need to use remote desktop to login to our Domain controller using the public IP address. Once Active Directory is installed you will be able to configure it to become an actual domain controller in what is called a new forest. Once AD is installed and you have created a new forest you will need to create a domain Admin user within the domain. This will allow the Admin to create new users and be able to reset passwords etc. Once this is completed you will want to join the client user to the domain. 
+<p>DC-1 has to have a static IP address. Client one will connect to DC-1 to ensure connectivity we will try to ping DC-1 from Client-1. At first the ping will not work correctly. We have to enable ICMPv4 on the firewall on DC-1. Now we can ping DC-1 successfully from Client-1
 </p>
 <br />
 
